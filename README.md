@@ -4,21 +4,25 @@ This asssignment is intended to extract some of the useful information from data
 
 The data is hosted at [This Place](https://raw.githubusercontent.com/onaio/ona-tech/master/data/water_points.json)
 
-The information eventually displayed reads in part as:
+The information is eventually displayed in the format:
 
-**Example**
+1. The number of water points that are functional,
+2. The number of water points per community,
+3. The rank for each community by the percentage of broken water points.
 
-```
-#...
 
-For village: Kom of ward: Builsa, the resource condition is: Functioning
-For village: Gaadem of ward: Builsa, the resource condition is: Functioning
-For village: Gaadem of ward: Builsa, the resource condition is: Functioning
-For village: Suik of ward: Builsa, the resource condition is: Functioning
-For village: Vundema of ward: Builsa, the resource condition is: Broken
-For village: Vundema of ward: Builsa, the resource condition is: Broken
-For village: Jiniensa of ward: Builsa, the resource condition is: Functioning
-For village: Jagsa of ward: Builsa, the resource condition is: Functioning
+```json
+{
 
-There are a total of 590 functional water points out of a possible 712.
+  number_functional: …,
+
+  number_water_points: {
+
+    communityA: …,
+
+  },
+
+  community_ranking: …
+
+}
 ```
